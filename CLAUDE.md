@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Rust-based Bitcoin puzzle hunter application designed to solve Bitcoin "puzzle transactions" through multithreaded brute force key generation and testing. The application generates candidate private keys and tests them against known public addresses or script hashes from the Bitcoin Puzzle Challenge.
+This is a Rust-based Bitcoin puzzle hunter application (Rust 2024 edition) designed to solve Bitcoin "puzzle transactions" through multithreaded brute force key generation and testing. The application generates candidate private keys and tests them against known public addresses or script hashes from the Bitcoin Puzzle Challenge.
 
 ## Development Setup
 
@@ -22,6 +22,8 @@ cargo init
 - **Show easy puzzles**: `cargo run --release -- --easy 5`
 - **Run specific puzzle**: `cargo run --release -- --puzzle 71 --threads 8`
 - **Manual range**: `cargo run --release -- --start 0x1 --end 0x100 --targets "address"`
+- **Benchmark CPU**: `cargo run --release -- --benchmark`
+- **Demo workers**: `cargo run --release -- --demo-workers`
 - **Test**: `cargo test`
 - **Lint**: `cargo clippy`
 - **Format**: `cargo fmt`
@@ -44,6 +46,7 @@ This application will likely need:
 - `rayon` - Data parallelism
 - `clap` - Command line argument parsing
 - `serde` - Serialization/deserialization
+- `num_cpus` - CPU core detection for benchmarking
 - `tokio` - Async runtime (if needed)
 
 ## Security Notes

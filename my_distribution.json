@@ -1,0 +1,34 @@
+{
+  "worker_ranges": [
+    {
+      "worker_name": "Server-1",
+      "hashes_per_second": 500000,
+      "start_hex": "8000000000",
+      "end_hex": "8011e1a2ff",
+      "range_size": 300000000,
+      "estimated_time_minutes": 10.0
+    },
+    {
+      "worker_name": "Server-2",
+      "hashes_per_second": 200000,
+      "start_hex": "8011e1a300",
+      "end_hex": "801908b0ff",
+      "range_size": 120000000,
+      "estimated_time_minutes": 10.0
+    },
+    {
+      "worker_name": "GPU-Rig",
+      "hashes_per_second": 2000000,
+      "start_hex": "801908b100",
+      "end_hex": "80608f3cff",
+      "range_size": 1200000000,
+      "estimated_time_minutes": 10.0
+    }
+  ],
+  "remaining_range": [
+    "80608f3d00",
+    "ffffffffff"
+  ],
+  "total_workers": 3,
+  "total_estimated_time_minutes": 10.0
+}

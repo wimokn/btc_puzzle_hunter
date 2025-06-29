@@ -1,0 +1,34 @@
+{
+  "worker_ranges": [
+    {
+      "worker_name": "Auto-Detected Machine",
+      "hashes_per_second": 17590,
+      "start_hex": "8000000000",
+      "end_hex": "8000a10a8f",
+      "range_size": 10554000,
+      "estimated_time_minutes": 10.0
+    },
+    {
+      "worker_name": "Server-A (Simulated)",
+      "hashes_per_second": 8795,
+      "start_hex": "8000a10a90",
+      "end_hex": "8000f18fd7",
+      "range_size": 5277000,
+      "estimated_time_minutes": 10.0
+    },
+    {
+      "worker_name": "Server-B (Simulated)",
+      "hashes_per_second": 35180,
+      "start_hex": "8000f18fd8",
+      "end_hex": "800233a4f7",
+      "range_size": 21108000,
+      "estimated_time_minutes": 10.0
+    }
+  ],
+  "remaining_range": [
+    "800233a4f8",
+    "ffffffffff"
+  ],
+  "total_workers": 3,
+  "total_estimated_time_minutes": 10.0
+}

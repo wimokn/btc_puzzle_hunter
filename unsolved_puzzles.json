@@ -1,5 +1,21 @@
 [
   {
+    "puzzle": 14,
+    "bits": 14,
+    "range_start": "0x2000",
+    "range_end": "0x3fff",
+    "address": "1ErZWg5cFCe4Vw5BzgfzB74VNLaXEiEkhk",
+    "reward_btc": 0.0
+  },
+  {
+    "puzzle": 24,
+    "bits": 24,
+    "range_start": "0x800000",
+    "range_end": "0xffffff",
+    "address": "1rSnXMr63jdCuegJFuidJqWxUPV7AtUf7",
+    "reward_btc": 0.0
+  },
+  {
     "puzzle": 71,
     "bits": 71,
     "range_start": "0x400000000000000000",

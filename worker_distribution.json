@@ -1,0 +1,42 @@
+{
+  "worker_ranges": [
+    {
+      "worker_name": "Current Machine",
+      "hashes_per_second": 255192,
+      "start_hex": "8000000000",
+      "end_hex": "8009205a3f",
+      "range_size": 153115200,
+      "estimated_time_minutes": 10.0
+    },
+    {
+      "worker_name": "High-End GPU Rig (Example)",
+      "hashes_per_second": 1000000,
+      "start_hex": "8009205a40",
+      "end_hex": "802ce3a03f",
+      "range_size": 600000000,
+      "estimated_time_minutes": 10.0
+    },
+    {
+      "worker_name": "Gaming PC (Example)",
+      "hashes_per_second": 100000,
+      "start_hex": "802ce3a040",
+      "end_hex": "803077273f",
+      "range_size": 60000000,
+      "estimated_time_minutes": 10.0
+    },
+    {
+      "worker_name": "Old Laptop (Example)",
+      "hashes_per_second": 10000,
+      "start_hex": "8030772740",
+      "end_hex": "8030d2b4bf",
+      "range_size": 6000000,
+      "estimated_time_minutes": 10.0
+    }
+  ],
+  "remaining_range": [
+    "8030d2b4c0",
+    "ffffffffff"
+  ],
+  "total_workers": 4,
+  "total_estimated_time_minutes": 10.0
+}

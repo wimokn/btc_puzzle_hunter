@@ -25,21 +25,21 @@ pub fn get_puzzle_by_number(puzzle_number: u32) -> Result<Option<PuzzleData>> {
 
 pub fn list_available_puzzles() -> Result<()> {
     let puzzles = load_unsolved_puzzles()?;
-    
+
     println!("Available unsolved Bitcoin puzzles:");
     println!("┌────────┬──────┬─────────────┬──────────────────────────────────────┐");
     println!("│ Puzzle │ Bits │ Reward (BTC)│ Address                              │");
     println!("├────────┼──────┼─────────────┼──────────────────────────────────────┤");
-    
+
     for puzzle in puzzles {
         println!(
             "│ {:6} │ {:4} │ {:11.1} │ {} │",
             puzzle.puzzle, puzzle.bits, puzzle.reward_btc, puzzle.address
         );
     }
-    
+
     println!("└────────┴──────┴─────────────┴──────────────────────────────────────┘");
-    
+
     Ok(())
 }
 

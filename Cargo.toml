@@ -1,7 +1,27 @@
 [package]
 name = "btc_puzzle_hunter"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
+
+[lib]
+name = "btc_puzzle_hunter"
+path = "src/lib.rs"
+
+[[bin]]
+name = "btc_puzzle_hunter"
+path = "src/main.rs"
+
+[[example]]
+name = "worker_distribution_example"
+path = "examples/worker_distribution_example.rs"
+
+[[example]]
+name = "auto_benchmark_example"
+path = "examples/auto_benchmark_example.rs"
+
+[[example]]
+name = "parameter_test"
+path = "examples/parameter_test.rs"
 
 [dependencies]
 secp256k1 = "0.29"
@@ -20,6 +40,8 @@ serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 log = "0.4"
 env_logger = "0.10"
+rand = "0.8"
+num_cpus = "1.16"
 
 [profile.release]
 opt-level = 3
